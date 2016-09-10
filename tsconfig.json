@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 {
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
         "sourceMap": false
     }
+=======
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": false
+    }
+>>>>>>> c5a2f9d6827e85ac33241153e219859842b2765d
 }
