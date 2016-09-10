@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Application</title>
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container" id="page-container">
+
+            <h1 id="app-name">
+                <span class="weather"></span> Weather Application
+            </h1>
+
+            <h2 id="user-input">
+                <div class="col-xs-6 col-lg-offset-3">
+                    <label for="city">Enter a city:</label>
+                    <input type="text" class="form-control" id="textId">
+                    <button type="button" class="btn btn-primary" id="buttonId" onclick="begin()">GO</button>
+                </div>
+            </h2>
+
+            <h2 id="current-weather">
+                Today's Weather
+                <img id="current-img" src="">
+            </h2>
+
+            <h2 id="tomorrows-weather">
+                Tomorrow's Weather
+                <img id="tomorrow-img" src="">
+            </h2>
+        </div>
+        
+        <!--jQuery Script-->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap Script-->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

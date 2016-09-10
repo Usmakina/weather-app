@@ -1,0 +1,54 @@
+html { 
+    background: url("https://static.pexels.com/photos/113/sky-clouds-cloudy-weather.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: white;
+    text-shadow: 3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+#user-input {
+    margin-top: 30px;
+}
+
+#buttonId {
+    margin-top: 10px;
+}
+
+h2#current-weather {
+    margin-top: 175px;
+}
+
+h1#app-name {
+    color: white;
+    font-family: serif;
+    font-size: 100px;
+}
+
+body #page-container {
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+img#current-img{
+    width:150px;
+    height:150px;
+    padding:20px;
+    display:none;
+    margin: 0 auto;
+}
+
+img#tomorrow-img{
+    width:150px;
+    height:150px;
+    padding:20px;
+    display:none;
+    margin: 0 auto;
+}
