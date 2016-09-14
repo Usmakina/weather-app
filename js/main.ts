@@ -1,7 +1,8 @@
 var currentWeather: Weather;
 var tomorrowWeather: Weather;
 
-var pageheader = $("#page-header")[0];
+var pageCurrentWeather = $("#current-weather")[0];
+var pageTomorrowWeather = $("#tomorrows-weather")[0];
 var pagecontainer = $("#page-container")[0];
 
 $("#textId").keyup(function(event){
@@ -36,11 +37,16 @@ function sendWeatherRequest(callback, weatherUrl) : void {
     })
 
     .done(function (data) {
-        var list = data.list;
-        callback(list);
+        if (data.message != "Error: Not found city")  {
+            var list = data.list;
+            callback(list);
+        } else {
+            pagecontainer.innerHTML = "Sorry, the city cannot be found. Please enter another city.";
+        }
     })
 
     .fail(function (error) {
+        pagecontainer.innerHTML = "Sorry, something went wrong. Please try again later."
         console.log(error.getAllResponseHeaders());
     });
 }
