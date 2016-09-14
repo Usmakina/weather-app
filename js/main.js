@@ -25,7 +25,7 @@ function displayWeather(weatherImg) {
 function sendWeatherRequest(callback, weatherUrl) {
     $.ajax({
         url: weatherUrl,
-        type: "POST",
+        type: "GET",
         dataType: 'json'
     })
         .done(function (data) {
