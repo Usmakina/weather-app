@@ -1,8 +1,6 @@
 var currentWeather: Weather;
 var tomorrowWeather: Weather;
 
-var pageCurrentWeather = $("#current-weather")[0];
-var pageTomorrowWeather = $("#tomorrows-weather")[0];
 var pagecontainer = $("#page-container")[0];
 
 $("#textId").keyup(function(event){

@@ -1,7 +1,5 @@
 var currentWeather;
 var tomorrowWeather;
-var pageCurrentWeather = $("#current-weather")[0];
-var pageTomorrowWeather = $("#tomorrows-weather")[0];
 var pagecontainer = $("#page-container")[0];
 $("#textId").keyup(function (event) {
     if (event.keyCode == 13) {
